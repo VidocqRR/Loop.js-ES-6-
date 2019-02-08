@@ -1,0 +1,37 @@
+//HomeWork 6 Loop.js
+
+function FizzBuzz(n) {
+    if(isPrime()) {
+        console.log('Prime')
+    }
+    for(let i = 0; i <= 100; i++) {
+        if (i % 15 === 0) {
+            console.log('FizzBuzz')
+        }
+        else if (i % 3 === 0) {
+            console.log('Fizz')
+        } else if(i % 5 === 0) {
+            console.log('Buzz')
+        } else {
+            console.log(i)
+        }
+    }
+
+        function isPrime() {
+        for (let j = 0; j <= 100; j++) {
+            if (j !== 0 && j !== 1) {
+                return true;
+            } else {
+                return false
+            }
+        }
+        }
+
+    isPrime()
+}
+
+FizzBuzz()
+
+
+
+
